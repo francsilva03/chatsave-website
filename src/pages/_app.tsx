@@ -34,28 +34,13 @@ function App({ Component, pageProps, router }: AppPropsWithLayout) {
   } else {
     getLayout = getDefaultLayout;
   }
-
-  useEffect(() => {
-    // Cargar el script después de que el componente haya sido montado
-    (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '661129d4fa1602136e80a749' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  }, []); // La matriz de dependencias vacía asegura que este efecto se ejecute solo una vez, después del montaje inicial
-
+  
   return (
     <Provider>
       <RootLayout>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {getLayout(<Component {...pageProps} />)}
-        <GoogleAnalytics gaId="G-FB9QLDNKNN" />
+        <GoogleAnalytics gaId="G-" />
       </RootLayout>
     </Provider>
   );

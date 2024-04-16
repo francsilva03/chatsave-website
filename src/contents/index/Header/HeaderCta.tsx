@@ -23,10 +23,10 @@ interface HeaderCtaProps {
 function ButtonContactMe() {
   return (
     <Link
-      href="/work/contact"
+      href="#"
       className={clsx('button button--solid min-w-[128px]', 'md:button--big')}
     >
-      Get in Touch
+      Comienza ahora
     </Link>
   );
 }
@@ -36,40 +36,12 @@ function ButtonResume() {
     <a
       target="_blank"
       rel="noreferrer nofollow"
-      href="https://www.figma.com/community/file/1176377524040948926"
+      href=""
       className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
     >
       <DocumentIcon className={clsx('h-5 w-5')} />
-      RESUME
+      Más información
     </a>
-  );
-}
-
-function AvailableForHire() {
-  return (
-    <div
-      className={clsx(
-        'button button--ghost text-accent-500 pointer-events-none gap-2.5 px-2.5',
-        'md:button--big md:px-2.5',
-        'dark:text-accent-400'
-      )}
-    >
-      <span className={clsx('relative flex h-2 w-2')}>
-        <span
-          className={clsx(
-            'bg-accent-600 absolute -top-1 -left-1 inline-flex h-4 w-4 animate-ping rounded-full opacity-75',
-            'dark:bg-accent-300'
-          )}
-        />
-        <span
-          className={clsx(
-            'bg-accent-500 relative inline-flex h-2 w-2 rounded-full',
-            'dark:bg-accent-400'
-          )}
-        />
-      </span>
-      AVAILABLE FOR HIRE
-    </div>
   );
 }
 
@@ -122,7 +94,6 @@ function HeaderCta({
             variants={isFreeVariants}
             transition={{ delay: isFreeAnimationDuration + 1.5, duration: 0.4 }}
           >
-            <AvailableForHire />
           </m.div>
           <m.div
             className={clsx('absolute top-0 left-0')}

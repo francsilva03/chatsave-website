@@ -1,8 +1,5 @@
 import clsx from 'clsx';
 
-import { GitHubIcon, TwitterIcon } from '@/components/Icons';
-import NavIcon from '@/components/navigations/NavIcon';
-import NavIconQuickAccess from '@/components/navigations/NavIconQuickAccess';
 import NavLink from '@/components/navigations/NavLink';
 import NavLinkDropdown from '@/components/navigations/NavLinkDropdown';
 import NavLinkExpanded from '@/components/navigations/NavLinkExpanded';
@@ -11,10 +8,9 @@ import NavLogo from '@/components/navigations/NavLogo';
 import useOnScroll from '@/hooks/useOnScroll';
 
 const workLinks = [
-  { title: 'Skills & Tools', href: '/work/skills-and-tools' },
-  { title: 'Experience', href: '/work/experience' },
-  { title: 'Studio', href: '/work/studio' },
-  { title: 'Contact', href: '/work/contact' },
+  { title: 'Servicios', href: '/work/skills-and-tools' },
+  { title: 'Precios', href: '/work/experience' },
+  { title: 'Contáctanos', href: '/work/contact' },
 ];
 
 function Navbar() {
@@ -48,49 +44,19 @@ function Navbar() {
             <NavLogo href="/" title="Home" />
             <ul className={clsx('flex items-center', 'md:gap-1')}>
               <li>
-                <NavLink title="Projects" href="/projects" />
+                <NavLink title="¿Quienes somos?" href="/projects" />
               </li>
               <li>
-                <NavLink title="Blog" href="/blog" />
-              </li>
-              <li>
-                <NavLink title="T.I.L" href="/today-i-learned" />
+                <NavLink title="Nuestro trabajo" href="/blog" />
               </li>
               <li className={clsx('lg:hidden')} data-accent="blue">
-                <NavLinkDropdown title="Work" items={workLinks} />
+                <NavLinkDropdown title="Sugerencias" items={workLinks} />
               </li>
               <li className={clsx('hidden lg:block')} data-accent="blue">
-                <NavLinkExpanded title="Work" items={workLinks} />
+                <NavLinkExpanded title="Sugerencias" items={workLinks} />
               </li>
             </ul>
           </nav>
-          <ul className={clsx('flex items-center')}>
-            <li className={clsx('hidden', 'sm:block')}>
-              <NavIcon
-                href="https://twitter.com/enjidev"
-                icon={<TwitterIcon className={clsx('h-5 w-5')} />}
-                title="Twitter"
-              />
-            </li>
-            <li className={clsx('hidden', 'sm:block')}>
-              <NavIcon
-                href="https://github.com/enjidev"
-                icon={<GitHubIcon className={clsx('h-5 w-5')} />}
-                title="GitHub"
-              />
-            </li>
-            <li className={clsx('hidden', 'sm:block')}>
-              <div
-                className={clsx(
-                  'ml-2 mr-4 h-3 w-[1px] bg-slate-200',
-                  'dark:bg-slate-700'
-                )}
-              />
-            </li>
-            <li className={clsx('mr-2')}>
-              <NavIconQuickAccess />
-            </li>
-          </ul>
         </div>
       </div>
     </header>

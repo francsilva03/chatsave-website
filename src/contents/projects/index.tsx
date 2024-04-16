@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 
-import { GitHubIcon, NpmIcon } from '@/components/Icons';
 import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
 import SectionTitle from '@/components/sections/SectionTitle';
@@ -29,14 +28,12 @@ function ProjectsContents() {
             <div className={clsx('flex flex-col gap-3')}>
               <SectionButton
                 title="Available on GitHub"
-                icon={<GitHubIcon className={clsx('my-2 h-16 w-16')} />}
                 description="Access powerful and flexible package on GitHub with MIT license."
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
               <SectionButton
                 title="npm package"
-                icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
                 description="Install and use the package with ease thanks to its typed options."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
@@ -50,12 +47,12 @@ function ProjectsContents() {
                   type="browser"
                   browserTabs={[
                     {
-                      icon: <GitHubIcon className="h-4 w-4" />,
+                      icon: '',
                       title: 'enjidev/tailwindcss-accent - GitHub',
                       isActive: currentState === 'github',
                     },
                     {
-                      icon: <NpmIcon className="h-4 w-4" />,
+                      icon: '',
                       title: 'tailwindcss-accent - npm',
                       isActive: currentState === 'npm',
                     },

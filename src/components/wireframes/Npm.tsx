@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 
-import { TypeScriptIcon } from '@/components/Icons';
 import { SkeletonSm } from '@/components/wireframes/Skeletons';
 
 interface NpmWireframeProps {
@@ -25,7 +24,6 @@ function NpmWireframe({
         {packageName}
         {isWithTypeScript && (
           <div className={clsx('')}>
-            <TypeScriptIcon className={clsx('ml-1 h-5 w-5')} />
           </div>
         )}
       </div>

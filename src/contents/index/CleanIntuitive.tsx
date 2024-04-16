@@ -20,28 +20,29 @@ const content: Array<Content> = [
   {
     state: 'typography',
     shows: ['typography'],
-    title: 'Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    title: 'Automatización inteligente para la eficiencia empresarial',
+    description: 'Reduce la carga de trabajo de tus empleados al automatizar tareas repetitivas con IA.',
   },
   {
     state: 'spacing',
     shows: ['typography', 'spacing'],
-    title: 'Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    title: 'Generación continua de clientes potenciales',
+    description: 'Brinda atención personalizada las 24 horas del día, los 7 días de la semana, para resolver dudas y captar nuevos clientes de manera efectiva.',
   },
   {
     state: 'colors',
     shows: ['typography', 'spacing', 'colors'],
-    title: 'Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
+    title: 'Optimización de recursos y reducción de costos',
+    description: 'Ahorra en costos operativos al implementar sistemas de automatización que optimizan recursos y procesos de manera eficiente.',
   },
   {
     state: 'effects',
     shows: ['typography', 'spacing', 'colors', 'effects'],
-    title: 'Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    title: 'Mejora de la experiencia del cliente y tasas de conversión',
+    description: 'Aumenta la satisfacción del cliente y las tasas de conversión mediante respuestas rápidas y precisas, gracias a nuestra automatización inteligente de IA.',
   },
 ];
+
 
 function CleanIntuitive() {
   const [currentState, setCurrentState] = useState<Content | null>(null);
@@ -50,10 +51,9 @@ function CleanIntuitive() {
     <>
       <header className={clsx('mb-8')}>
         <SectionTitle
-          title="Eye Catching, Modern & Minimalist Design."
-          caption="Clean & Intuitive"
-          description="Keep the User Interface clean with a modern touch without
-            compromising the User Experience."
+          title="Nuestra misión es elevar su negocio"
+          caption="¿Por que una agencia de automatización de IA?"
+          description="Somos expertos en tecnología con una sólida experiencia en empresas líderes. Nuestro enfoque está en automatizar tus procesos para que puedas dedicar tu tiempo a lo que realmente importa: hacer crecer tu negocio."
         />
       </header>
       <SectionContent>

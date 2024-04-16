@@ -1,14 +1,14 @@
-import clsx from 'clsx';
+import clsx from "clsx";
 
-import SectionTitle from '@/components/sections/SectionTitle';
+import SectionTitle from "@/components/sections/SectionTitle";
 
 function DetailOriented() {
   return (
-    <header className={clsx('mb-8')}>
+    <header className={clsx("mb-8")}>
       <SectionTitle
-        title="Keen Eye for Spotting Small Details."
-        caption="Detail Oriented"
-        description="Awareness to ease of access, User Interface consistency, and improved User Experience."
+        title="Planes flexibles para cualquier tamaño de negocio"
+        caption="Precios"
+        description="Nuestros precios escalan de manera proporcional al crecimiento de tu empresa, garantizando que siempre obtengas el mejor valor por tu inversión en automatización de IA."
       />
     </header>
   );

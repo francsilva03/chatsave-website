@@ -8,6 +8,7 @@ import FeaturedCard from '@/contents/index/FeaturedCard';
 import Header from '@/contents/index/Header';
 import PrettyOptimized from '@/contents/index/PrettyOptimized';
 import Quote from '@/contents/index/Quote';
+import ProjectsContents from '../projects';
 
 function FeaturedCardSection() {
   return (
@@ -24,8 +25,8 @@ function FeaturedCardSection() {
               <SparklesIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Clean & Intuitive"
-          desc="Keep the UI clean with a modern touch without compromising UX."
+          title="Inteligencia Artificial"
+          desc="Te ayudará a proporcionar una experiencia de usuario más personalizada."
         />
         <FeaturedCard
           icon={
@@ -38,8 +39,8 @@ function FeaturedCardSection() {
               <HeartIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Detail Oriented"
-          desc="Awareness to ease of access, UI consistency, and improved UX."
+          title="Adaptado a tu negocio"
+          desc="Nuestros servicios se adaptan a las necesidades de tu negocio."
         />
         <FeaturedCard
           icon={
@@ -52,19 +53,9 @@ function FeaturedCardSection() {
               <CodeIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible."
+          title="Calidad garantizada"
+          desc="Entregaremos avances de forma constante para garantizar la calidad del producto."
         />
-      </div>
-    </div>
-  );
-}
-
-function QuoteSection() {
-  return (
-    <div className={clsx('content-wrapper')}>
-      <div className={clsx('flex items-center justify-center py-8')}>
-        <Quote />
       </div>
     </div>
   );
@@ -77,9 +68,7 @@ function IndexContents() {
       <div className={clsx('hidden', 'lg:-mt-16 lg:mb-24 lg:block')}>
         <FeaturedCardSection />
       </div>
-      <div className={clsx('-mt-12 mb-12', 'md:mt-0 md:mb-24')}>
-        <QuoteSection />
-      </div>
+      <ProjectsContents />
       <section className={clsx('mb-12', 'lg:mb-24')}>
         <CleanIntuitive />
       </section>

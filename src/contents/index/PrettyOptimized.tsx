@@ -5,11 +5,12 @@ import SectionTitle from '@/components/sections/SectionTitle';
 function PrettyOptimized() {
   return (
     <header className={clsx('mb-8')}>
-      <SectionTitle
-        title="Comprehensible and Optimized Code."
-        caption="Pretty & Optimized"
-        description="Writing clean code is a top priority while keeping it as optimized as possible."
-      />
+ <SectionTitle
+    title="¡Comienza Ahora!"
+    caption="Contáctanos"
+    description="¿Listo para dar el primer paso hacia la automatización inteligente de tu negocio? Contáctanos por correo electrónico y cuéntanos más sobre tu situación particular."
+/>
+
     </header>
   );
 }

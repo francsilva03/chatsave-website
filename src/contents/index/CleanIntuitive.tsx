@@ -20,27 +20,21 @@ const content: Array<Content> = [
   {
     state: 'typography',
     shows: ['typography'],
-    title: 'Automatización inteligente para la eficiencia empresarial',
-    description: 'Reduce la carga de trabajo de tus empleados al automatizar tareas repetitivas con IA.',
+    title: 'Llamada de exploración',
+    description: 'Nos encargamos de comunicarnos contigo para tener un primer acercamiento y conocerte mejor.',
   },
   {
     state: 'spacing',
     shows: ['typography', 'spacing'],
-    title: 'Generación continua de clientes potenciales',
-    description: 'Brinda atención personalizada las 24 horas del día, los 7 días de la semana, para resolver dudas y captar nuevos clientes de manera efectiva.',
+    title: 'Análisis de tu negocio',
+    description: 'Analizaremos tu negocio para encontrar puntos claves donde puedan haber oportunidades de mejora con nuestras soluciones y adaptarlas para tí.',
   },
   {
     state: 'colors',
     shows: ['typography', 'spacing', 'colors'],
-    title: 'Optimización de recursos y reducción de costos',
-    description: 'Ahorra en costos operativos al implementar sistemas de automatización que optimizan recursos y procesos de manera eficiente.',
-  },
-  {
-    state: 'effects',
-    shows: ['typography', 'spacing', 'colors', 'effects'],
-    title: 'Mejora de la experiencia del cliente y tasas de conversión',
-    description: 'Aumenta la satisfacción del cliente y las tasas de conversión mediante respuestas rápidas y precisas, gracias a nuestra automatización inteligente de IA.',
-  },
+    title: 'Comienzo del desarrollo',
+    description: 'Se inicia con el desarrollo de la solución en base al análisis realizado y te entregamos avances constantemente para que nos des tu.',
+  }
 ];
 
 
@@ -51,9 +45,9 @@ function CleanIntuitive() {
     <>
       <header className={clsx('mb-8')}>
         <SectionTitle
-          title="Nuestra misión es elevar su negocio"
-          caption="¿Por que una agencia de automatización de IA?"
-          description="Somos expertos en tecnología con una sólida experiencia en empresas líderes. Nuestro enfoque está en automatizar tus procesos para que puedas dedicar tu tiempo a lo que realmente importa: hacer crecer tu negocio."
+          title="Proceso"
+          caption="¿Cómo comenzamos?"
+          description="El proceso que seguimos es muy simple y consta solamente de tres pasos."
         />
       </header>
       <SectionContent>

@@ -1,5 +1,3 @@
-import type { ContentType, ReactionType, ShareType } from '@prisma/client';
-
 export type TApiResponse = {
   message: string;
 };
@@ -43,7 +41,7 @@ export type TProjectFrontMatter = TBaseFrontMatter & {
   type: 'package';
 };
 
-export type TReaction = Record<ReactionType, number>;
+export type TReaction = Record<any, number>;
 
 export type TContentMeta = {
   meta: {
@@ -71,21 +69,21 @@ export type TContentMetaDetail = {
 
 export type TContentActivityShares = {
   activityType: 'SHARE';
-  type: ShareType;
+  type: any;
   createdAt: string;
   slug: string;
   contentTitle: string;
-  contentType: ContentType;
+  contentType: any;
 };
 
 export type TContentActivityReaction = {
   activityType: 'REACTION';
-  type: ReactionType;
+  type: any;
   count: number;
   createdAt: string;
   slug: string;
   contentTitle: string;
-  contentType: ContentType;
+  contentType: any;
 };
 
 export type TContentActivity =

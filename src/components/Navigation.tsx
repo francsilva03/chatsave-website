@@ -44,10 +44,10 @@ function Navbar() {
             <NavLogo href="/" title="Home" />
             <ul className={clsx('flex items-center', 'md:gap-1')}>
               <li>
-                <NavLink title="¿Quienes somos?" href="/projects" />
+                <NavLink title="Nuestra misión" href="/projects" />
               </li>
               <li>
-                <NavLink title="Nuestro trabajo" href="/blog" />
+                <NavLink title="Proceso" href="/blog" />
               </li>
               <li className={clsx('lg:hidden')} data-accent="blue">
                 <NavLinkDropdown title="Sugerencias" items={workLinks} />

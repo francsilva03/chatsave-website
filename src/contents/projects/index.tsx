@@ -14,27 +14,35 @@ function ProjectsContents() {
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-        button={{
-          title: 'learn more',
-          href: '/docs/tailwindcss-accent',
-        }}
+        title="Adaptados a cualquier tipo de negocio"
+        caption="Servicios"
+        description="Podemos ofrecer varios tipos de servicios adaptados a tu negocio y evolucionar de manera proporcional en la medida en que creces."
       />
       <SectionContent>
         <div className={clsx('flex', 'lg:gap-12')}>
           <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
             <div className={clsx('flex flex-col gap-3')}>
               <SectionButton
-                title="Available on GitHub"
-                description="Access powerful and flexible package on GitHub with MIT license."
+                title="Automatización inteligente para la eficiencia empresarial"
+                description="Reduce la carga de trabajo de tus empleados al automatizar tareas repetitivas con IA."
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
               <SectionButton
-                title="npm package"
-                description="Install and use the package with ease thanks to its typed options."
+                title="Generación continua de clientes potenciales"
+                description="Brinda atención personalizada las 24 horas del día, los 7 días de la semana, para resolver dudas y captar nuevos clientes de manera efectiva."
+                active={currentState === 'npm'}
+                onClick={() => setCurrentState('npm')}
+              />
+             <SectionButton
+                title="Optimización de recursos y reducción de costos"
+                description="Ahorra en costos operativos al implementar sistemas de automatización que optimizan recursos y procesos de manera eficiente."
+                active={currentState === 'npm'}
+                onClick={() => setCurrentState('npm')}
+              />
+                 <SectionButton
+                title="Mejora de la experiencia del cliente y tasas de conversión"
+                description="AAumenta la satisfacción del cliente y las tasas de conversión mediante respuestas rápidas y precisas, gracias a nuestra automatización inteligente de IA."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
               />

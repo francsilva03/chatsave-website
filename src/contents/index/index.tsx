@@ -7,8 +7,8 @@ import DetailOriented from '@/contents/index/DetailOriented';
 import FeaturedCard from '@/contents/index/FeaturedCard';
 import Header from '@/contents/index/Header';
 import PrettyOptimized from '@/contents/index/PrettyOptimized';
-import Quote from '@/contents/index/Quote';
 import ProjectsContents from '../projects';
+import SectionTitle from '@/components/sections/SectionTitle';
 
 function FeaturedCardSection() {
   return (
@@ -68,7 +68,16 @@ function IndexContents() {
       <div className={clsx('hidden', 'lg:-mt-16 lg:mb-24 lg:block')}>
         <FeaturedCardSection />
       </div>
+      <section className={clsx('mb-12', 'lg:mb-24')}>
+      <SectionTitle
+        title="Nuestra misión es elevar su negocio"
+        caption="¿Por que una agencia de automatización de IA?"
+        description="Somos expertos en tecnología con una sólida experiencia en empresas líderes. Nuestro enfoque está en automatizar tus procesos para que puedas dedicar tu tiempo a lo que realmente importa: hacer crecer tu negocio."
+      />
+      </section>
+      <section className={clsx('mb-12', 'lg:mb-24')}>
       <ProjectsContents />
+      </section>
       <section className={clsx('mb-12', 'lg:mb-24')}>
         <CleanIntuitive />
       </section>

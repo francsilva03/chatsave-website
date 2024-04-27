@@ -48,7 +48,7 @@ function HeaderTitle() {
           >
            chatbots y automatizaciones
           </strong>{' '}
-          de IA
+          con IA
         </m.h1>
       </span>
     </div>

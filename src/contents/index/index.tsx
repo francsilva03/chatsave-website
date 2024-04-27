@@ -2,12 +2,12 @@ import clsx from 'clsx';
 
 import { CodeIcon, HeartIcon, SparklesIcon } from '@/components/Icons';
 
-import CleanIntuitive from '@/contents/index/CleanIntuitive';
+import CleanIntuitive from '@/contents/index/HowToStart';
 import DetailOriented from '@/contents/index/DetailOriented';
 import FeaturedCard from '@/contents/index/FeaturedCard';
 import Header from '@/contents/index/Header';
 import PrettyOptimized from '@/contents/index/PrettyOptimized';
-import ProjectsContents from '../projects';
+import ServicesContent from './Services';
 import SectionTitle from '@/components/sections/SectionTitle';
 
 function FeaturedCardSection() {
@@ -76,7 +76,7 @@ function IndexContents() {
       />
       </section>
       <section className={clsx('mb-12', 'lg:mb-24')}>
-      <ProjectsContents />
+      <ServicesContent />
       </section>
       <section className={clsx('mb-12', 'lg:mb-24')}>
         <CleanIntuitive />

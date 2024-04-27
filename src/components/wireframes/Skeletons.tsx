@@ -33,7 +33,7 @@ export function SkeletonMd({
   return (
     <div
       className={clsx(
-        'flex h-6 items-center rounded-lg bg-slate-200/80',
+        'flex items-center rounded-lg bg-slate-200/80',
         'dark:bg-slate-100/5'
       )}
       style={{ width: w }}

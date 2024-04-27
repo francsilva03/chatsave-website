@@ -66,19 +66,16 @@ function AppWindow({
           <div
             className={clsx(
               'h-3 w-3 rounded-full bg-red-300',
-              'dark:bg-slate-500'
             )}
           />
           <div
             className={clsx(
               'h-3 w-3 rounded-full bg-amber-300',
-              'dark:bg-slate-500'
             )}
           />
           <div
             className={clsx(
               'h-3 w-3 rounded-full bg-green-300',
-              'dark:bg-slate-500'
             )}
           />
         </div>

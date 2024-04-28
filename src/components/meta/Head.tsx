@@ -27,7 +27,7 @@ function Head({
     <NextHead>
       <title>{htmlTitle}</title>
       <meta name="description" content={description} />
-      <a rel="icon" href="#autoflow" />
+      <link rel="icon" href="/" />
 
       {/* seo */}
       <link rel="canonical" href={currentUrl} />

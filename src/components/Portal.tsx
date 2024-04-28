@@ -1,6 +1,5 @@
 import { memo, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-
 import type { PropsWithChildren } from 'react';
 
 interface PortalProps {

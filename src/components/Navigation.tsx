@@ -1,16 +1,14 @@
 import clsx from 'clsx';
-
 import NavLink from '@/components/navigations/NavLink';
 import NavLinkDropdown from '@/components/navigations/NavLinkDropdown';
 import NavLinkExpanded from '@/components/navigations/NavLinkExpanded';
 import NavLogo from '@/components/navigations/NavLogo';
-
 import useOnScroll from '@/hooks/useOnScroll';
 
 const workLinks = [
-  { title: 'Servicios', href: '/work/skills-and-tools' },
-  { title: 'Precios', href: '/work/experience' },
-  { title: 'Contáctanos', href: '/work/contact' },
+  { title: 'Servicios', href: '#services' },
+  { title: 'Proceso', href: '#process' },
+  { title: 'Precios', href: '#prices' },
 ];
 
 function Navbar() {
@@ -44,10 +42,10 @@ function Navbar() {
             <NavLogo href="/" title="Home" />
             <ul className={clsx('flex items-center', 'md:gap-1')}>
               <li>
-                <NavLink title="Nuestra misión" href="/projects" />
+                <NavLink title="Nuestra misión" href="#mision" />
               </li>
               <li>
-                <NavLink title="Proceso" href="/blog" />
+                <NavLink title="Contáctanos" href="#contact" />
               </li>
               <li className={clsx('lg:hidden')} data-accent="blue">
                 <NavLinkDropdown title="Sugerencias" items={workLinks} />

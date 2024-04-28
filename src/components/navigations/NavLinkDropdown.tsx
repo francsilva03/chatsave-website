@@ -1,13 +1,11 @@
 import { Menu } from '@headlessui/react';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
-import Link from 'next/link';
 import { forwardRef } from 'react';
-
 import { ChevronRightIcon } from '@/components/Icons';
-
 import type { HTMLAttributes, Ref } from 'react';
 import type { UrlObject } from 'url';
+import Link from 'next/link';
 
 const animation = {
   hide: { opacity: 0, y: -16 },

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React from 'react';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import RootLayout from '@/components/layouts/Root';

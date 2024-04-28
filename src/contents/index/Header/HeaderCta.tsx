@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { m, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
-import { DocumentIcon } from '@/components/Icons';
+import { CalendarIcon, MailIcon } from '@/components/Icons';
 
 const animation = {
   hide: {
@@ -15,33 +15,44 @@ const animation = {
   },
 };
 
+
 interface HeaderCtaProps {
   isFree?: boolean;
   isFreeAnimationDuration?: number;
 }
 
-function ButtonContactMe() {
+export function ButtonContactMe() {
   return (
     <Link
-      href="#"
+      href="https://calendly.com/francsilva/30min"
+      target="_blank"
+      rel="noreferrer nofollow"
       className={clsx('button button--solid min-w-[128px]', 'md:button--big')}
     >
+      <CalendarIcon  className={clsx('w-6')} />
       Comienza ahora
     </Link>
   );
 }
 
+
 function ButtonResume() {
+  const handleSendEmail = () => {
+    const emailAddress = 'francsilva03@gmail.com'; 
+    const subject = 'Información';
+
+    window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+  };
+
   return (
-    <a
-      target="_blank"
-      rel="noreferrer nofollow"
-      href=""
+    <button
+      type="button"
       className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
+      onClick={handleSendEmail}
     >
-      <DocumentIcon className={clsx('h-5 w-5')} />
-      Más información
-    </a>
+      <MailIcon className={clsx('h-5 w-5')} />
+      Envíanos un correo
+    </button>
   );
 }
 

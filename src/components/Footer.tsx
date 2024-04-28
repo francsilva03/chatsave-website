@@ -1,10 +1,8 @@
 import clsx from "clsx";
 import Link from "next/link";
-
 import {
   ExternalLink,
 } from "@/components/Icons";
-
 import dayjs from "@/utils/dayjs";
 
 interface FooterLinkProps {
@@ -141,15 +139,15 @@ function Footer() {
               <FooterGroup
                   title="Nuestro trabajo"
                   links={[
-                    { title: "Servicios", href: "/work/contact" },
-                    { title: "Precios", href: "/work/experience" },
+                    { title: "Servicios", href: "#services" },
+                    { title: "Precios", href: "#prices" },
                     {
                       title: "Contáctanos",
-                      href: "/work/services",
+                      href: "#contact",
                     },
                     {
                       title: "Herramientas",
-                      href: "/work/skills-and-tools",
+                      href: "#",
                       label: "Muy pronto",
                     },
                   ]}
@@ -165,7 +163,7 @@ function Footer() {
           )}
         >
           <div className={clsx("font-semibold")}>
-            &copy; {dayjs().format("YYYY")}, Agencia de automatización de IA
+            &copy; {dayjs().format("YYYY")}, Autoflow
           </div>
         </div>
       </div>

@@ -17,13 +17,19 @@ function ServicesContent() {
   return (
     <>
       <SectionTitle
+        id="services"
         title="Adaptados a cualquier tipo de negocio"
         caption="Servicios"
         description="Podemos ofrecer varios tipos de servicios adaptados a tu negocio y evolucionar de manera proporcional en la medida en que creces."
       />
       <SectionContent>
-        <div className={clsx("flex", "lg:gap-12")}>
-          <div className={clsx("hidden flex-1 flex-col gap-3 pt-8", "lg:flex")}>
+        <div className="md:flex gap-12 xs:flex-col">
+          <div
+            className={clsx(
+              "w-full flex-1 flex-col gap-3 pt-8 pb-12",
+              "lg:flex"
+            )}
+          >
             <div className={clsx("flex flex-col gap-3")}>
               <SectionButton
                 title="Chatbot con inteligencia artificial"
@@ -39,7 +45,7 @@ function ServicesContent() {
               />
             </div>
           </div>
-          <div className={clsx("w-full", "lg:w-auto")}>
+          <div className={clsx("xs:w-full", "lg:w-auto")}>
             <div className={clsx("-mt-[41px]")}>
               <div className={clsx("w-full", "lg:h-[400px] lg:w-[600px]")}>
                 <AppWindow

@@ -2,10 +2,9 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 function Document() {
   return (
-    <Html lang="en">
+    <Html lang="es">
       <Head />
       <body>
-        <div id="skip-navigation" />
         <Main />
         <NextScript />
       </body>

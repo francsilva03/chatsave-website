@@ -6,6 +6,7 @@ import { ChevronRightIcon } from '@/components/Icons';
 import type { ReactNode } from 'react';
 
 interface SectionTitleProps {
+  id?: string;
   as?: 'h2' | 'h3';
   title: string;
   caption: string;
@@ -17,6 +18,7 @@ interface SectionTitleProps {
 }
 
 function SectionTitle({
+  id = '', 
   as = 'h2',
   title,
   caption,
@@ -26,7 +28,7 @@ function SectionTitle({
   const Heading = as;
 
   return (
-    <div className={clsx('content-wrapper')}>
+    <div id={id} className={clsx('content-wrapper')} >
       <Heading
         className={clsx(
           'text-accent-600 mb-2 block font-black',

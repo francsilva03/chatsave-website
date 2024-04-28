@@ -1,7 +1,4 @@
 import clsx from 'clsx';
-
-import { SkeletonMd } from '@/components/wireframes/Skeletons';
-
 import type { PropsWithChildren, ReactNode } from 'react';
 
 interface BrowserTabProps {
@@ -82,7 +79,6 @@ function AppWindow({
         {type === 'browser' && (
           <>
             <div className={clsx('flex h-10 items-center justify-center')}>
-              <SkeletonMd w={160} />
             </div>
             {isWithBrowserTabs && (
               <div className={clsx('mt-2 flex gap-2 px-3')}>

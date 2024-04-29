@@ -61,7 +61,7 @@ function Process() {
                 title={item.title}
                 description={item.description}
                 icon={i + 1}
-                active={currentState.state === item.state} // Modificada la comparación aquí
+                active={currentState.state === item.state}
                 onClick={() => setCurrentState(item)}
               />
             ))}
@@ -79,13 +79,13 @@ function Process() {
                   transition={{ duration: 0.5 }}
                   key={currentState.state} 
                 >
-                  <Image
-                   className={clsx("rounded-2xl shadow-xl")}
-                    src={currentState.image}
-                    width={500}
-                    height={500}
-                    alt={currentState.state}
-                  />
+                  <div >
+                    <Image
+                    className={clsx("rounded-2xl shadow-xl")}
+                      src={currentState.image}
+                      alt={currentState.state}
+                    />
+                  </div>
                 </m.div>
               </div>
             </div>

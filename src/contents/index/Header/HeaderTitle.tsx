@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { m, useAnimationControls } from 'framer-motion';
+import { m } from 'framer-motion';
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -10,8 +10,6 @@ const animation = {
 };
 
 function HeaderTitle() {
-  const controls = useAnimationControls();
-
   return (
     <div>
       <span className={clsx('text-slate-700', 'dark:text-slate-300')}>

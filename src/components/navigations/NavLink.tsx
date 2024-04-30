@@ -15,7 +15,7 @@ function NavLink({ title, href }: NavLinkProps) {
     const targetElement = document.getElementById(targetId); // Encuentra el elemento de destino
     
     if (targetElement) {
-      const offset = 80; // Ajusta el offset según sea necesario
+      const offset = 1000; // Ajusta el offset según sea necesario
       
       const targetOffset = targetElement.offsetTop - offset; // Calcula el desplazamiento objetivo
       window.scrollTo({ top: targetOffset, behavior: 'smooth' }); // Desplázate al elemento de destino con animación suave

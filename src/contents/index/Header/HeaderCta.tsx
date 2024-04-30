@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { m, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
-import { CalendarIcon, MailIcon } from '@/components/Icons';
+import { CalendarIcon, MailIcon, PhoneIcon } from '@/components/Icons';
 
 const animation = {
   hide: {
@@ -24,7 +24,7 @@ interface HeaderCtaProps {
 export function ButtonContactMe() {
   return (
     <Link
-      href="https://calendly.com/francsilva/30min"
+      href="https://calendly.com/cchatsave/30min"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('button button--solid min-w-[128px]', 'md:button--big')}
@@ -38,21 +38,36 @@ export function ButtonContactMe() {
 
 function ButtonResume() {
   const handleSendEmail = () => {
-    const emailAddress = 'francsilva03@gmail.com'; 
-    const subject = 'Información';
+    const emailAddress = 'cchatsave@gmail.com'; 
+    const subject = 'Solicitar información';
 
     window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
   };
 
+  const handleCall = () => {
+    const phoneNumber = '+34623522786'; // Número de teléfono al que se desea llamar
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
-    <button
-      type="button"
-      className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
-      onClick={handleSendEmail}
-    >
-      <MailIcon className={clsx('h-5 w-5')} />
-      Envíanos un correo
-    </button>
+    <div>
+      <button
+        type="button"
+        className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
+        onClick={handleSendEmail}
+      >
+        <MailIcon className={clsx('h-5 w-5')} />
+        Envíanos un correo
+      </button>
+      <button
+        type="button"
+        className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
+        onClick={handleCall}
+      >
+        <PhoneIcon className={clsx('h-5 w-5')} />
+        Llámanos
+      </button>
+    </div>
   );
 }
 
@@ -89,7 +104,7 @@ function HeaderCta({
   return (
     <m.div className={clsx('flex gap-2')} initial="hide" animate="show">
       <m.div
-        className={clsx('relative z-20')}
+        className={clsx('relative z-20 top-2')}
         variants={animation}
         transition={{ delay: 0.4 }}
       >

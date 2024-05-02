@@ -35,14 +35,18 @@ function HeaderTechStack() {
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
-            <TikTokIcon className={clsx('h-6 w-6')} />
-          </div>
+          <a href="https://www.tiktok.com/@chatsave.ia">
+            <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
+              <TikTokIcon className={clsx('h-6 w-6')} />
+            </div>
+          </a>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
-            <InstagramIcon className={clsx('h-6 w-6')} />
-          </div>
+          <a href="https://www.instagram.com/chatsave.ia/">
+            <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
+              <InstagramIcon className={clsx('h-6 w-6')} />
+            </div>
+          </a>
         </m.li>
       </m.ul>
     </div>

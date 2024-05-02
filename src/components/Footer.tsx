@@ -163,7 +163,7 @@ function Footer() {
           )}
         >
           <div className={clsx("font-semibold")}>
-            &copy; {dayjs().format("YYYY")}, Autoflow
+            &copy; {dayjs().format("YYYY")}, ChatSave
           </div>
         </div>
       </div>

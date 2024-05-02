@@ -5,7 +5,7 @@ import NavLinkExpanded from '@/components/navigations/NavLinkExpanded';
 import NavLogo from '@/components/navigations/NavLogo';
 import useOnScroll from '@/hooks/useOnScroll';
 
-const workLinks = [
+const optionLinks = [
   { title: 'Servicios', href: '#services' },
   { title: 'Proceso', href: '#process' },
   { title: 'Precios', href: '#prices' },
@@ -48,10 +48,10 @@ function Navbar() {
                 <NavLink title="Contáctanos" href="#contact" />
               </li>
               <li className={clsx('lg:hidden')} data-accent="blue">
-                <NavLinkDropdown title="Sugerencias" items={workLinks} />
+                <NavLinkDropdown title="Sugerencias" items={optionLinks} />
               </li>
               <li className={clsx('hidden lg:block')} data-accent="blue">
-                <NavLinkExpanded title="Sugerencias" items={workLinks} />
+                <NavLinkExpanded title="Sugerencias" items={optionLinks} />
               </li>
             </ul>
           </nav>

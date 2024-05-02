@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ReactNode } from 'react';
+import { ReactNode, forwardRef } from 'react';
 
 export type NavLinkProps = {
   title: string;
@@ -7,26 +7,27 @@ export type NavLinkProps = {
   icon?: ReactNode;
 };
 
-function NavLink({ title, href }: NavLinkProps) {
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    
-    const targetId = href.substring(1); // Obtiene el ID del elemento de destino
-    const targetElement = document.getElementById(targetId); // Encuentra el elemento de destino
-    
-    if (targetElement) {
-      const offset = 1000; // Ajusta el offset según sea necesario
-      
-      const targetOffset = targetElement.offsetTop - offset; // Calcula el desplazamiento objetivo
-      window.scrollTo({ top: targetOffset, behavior: 'smooth' }); // Desplázate al elemento de destino con animación suave
-    }
-  };
+const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
+  ({ title, href }: NavLinkProps, ref) => {
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+      event.preventDefault(); 
 
-  return (
-    <a href={href} className={clsx('nav-link')} onClick={handleClick}>
-      {title}
-    </a>
-  );
-}
+      const targetId = href.substring(1); 
+      const targetElement = document.getElementById(targetId); 
+      
+      if (targetElement) {
+        const offset = 100; 
+        const targetOffset = targetElement.offsetTop - offset; 
+        window.scrollTo({ top: targetOffset, behavior: 'smooth' }); 
+      }
+    };
+
+    return (
+      <a ref={ref} href={href} className={clsx('nav-link')} onClick={handleClick}>
+        {title}
+      </a>
+    );
+  }
+);
 
 export default NavLink;

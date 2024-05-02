@@ -23,6 +23,7 @@ function VideoWireframe({ videoSrc }: AutomationWireframeProps) {
           src={videoSrc}
           loop
           muted
+          playsInline
         />
       </div>
     </div>

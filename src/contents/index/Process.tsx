@@ -26,9 +26,9 @@ const content: Array<any> = [
   },
   {
     state: "develop",
-    title: "Comienzo del desarrollo",
+    title: "Inicio del desarrollo",
     description:
-      "Se inicia con el desarrollo de la solución en base al análisis realizado y te daremos avances constantes para que nos des tu feedback.",
+      "Comenzamos desarrollando la solución basada en un análisis realizado. Te proporcionamos avances constantes en los primeros días para que puedas brindarnos tu retroalimentación, asegurando que sea exactamente lo que necesitas.",
     image: DevelopImage
   },
 ];

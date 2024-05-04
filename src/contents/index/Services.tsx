@@ -20,7 +20,7 @@ function ServicesContent() {
         id="services"
         title="Adaptados a cualquier tipo de negocio"
         caption="Servicios"
-        description="Podemos ofrecer varios tipos de servicios adaptados a tu negocio y evolucionar de manera proporcional en la medida en que creces."
+        description="Podemos ofrecerte servicios adaptadas a tu negocio y evolucionar de manera proporcional en la medida en que creces."
       />
       <SectionContent>
         <div className="md:flex gap-12 xs:flex-col">
@@ -33,13 +33,13 @@ function ServicesContent() {
             <div className={clsx("flex flex-col gap-3")}>
               <SectionButton
                 title="Chatbot con inteligencia artificial"
-                description="Brinda atención personalizada las 24 horas del día, los 7 días de la semana, para resolver dudas y captar nuevos clientes de manera efectiva."
+                description="Brinda atención personalizada las 24 horas del día los 7 días de la semana para resolver dudas, captura la intención del usuario para una conversación personalizada, consigue nuevos clientes, puede reservar citas o llamadas. ¡Y mucho más adaptandose a tu negocio!."
                 active={currentState === "chatbot"}
                 onClick={() => setCurrentState("chatbot")}
               />
               <SectionButton
-                title="Automatización con inteligencia artificial"
-                description="Reduce la carga de trabajo de tu negocio al automatizar tareas repetitivas con IA. "
+                title="Automatización de tu flujo de trabajo"
+                description="Optimiza tu trabajo al automatizar tareas repetitivas. Personalizamos flujos de trabajo conectados a tus herramientas diarias para aumentar tu productividad en todas las áreas de tu negocio, adaptándonos a tus necesidades específicas."
                 active={currentState === "automatization"}
                 onClick={() => setCurrentState("automatization")}
               />

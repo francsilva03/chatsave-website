@@ -24,7 +24,7 @@ interface HeaderCtaProps {
 export function ButtonContactMe() {
   return (
     <Link
-      href="https://calendly.com/cchatsave/30min"
+      href="https://calendly.com/chatsave/30min"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('button button--solid min-w-[128px]', 'md:button--big')}

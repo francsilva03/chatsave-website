@@ -31,22 +31,21 @@ function HeaderTitle() {
           className={clsx(
             'block text-base text-slate-600',
             'md:text-xl',
-            'dark:text-slate-400'
+            'dark:text-slate-400', 'w-1/2'
           )}
           initial={animation.hide}
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span>Potencia tus procesos con nuestros </span>{' '}
+          <span>Potencia tu productividad, automatiza tus procesos y dedicate a lo que realmente importa:</span>{' '}
           <strong
             className={clsx(
               'font-bold lowercase text-slate-700',
               'dark:text-slate-300'
             )}
           >
-           chatbots y automatizaciones
+           hacer crecer tu negocio
           </strong>{' '}
-          con IA
         </m.h1>
       </span>
     </div>

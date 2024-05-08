@@ -31,7 +31,7 @@ function HeaderTitle() {
           className={clsx(
             'block text-base text-slate-600',
             'md:text-xl',
-            'dark:text-slate-400', 'w-1/2'
+            'dark:text-slate-400', 'w-2/3'
           )}
           initial={animation.hide}
           animate={animation.show}

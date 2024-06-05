@@ -1,10 +1,9 @@
-import { Head, Html, Main, NextScript } from 'next/document';
-
+import { Head, Html, Main, NextScript } from "next/document";
 function Document() {
   return (
     <Html lang="es">
-      <Head >
-      <link rel="icon" href="/favicon.ico" />
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

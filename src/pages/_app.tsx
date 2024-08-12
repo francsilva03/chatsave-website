@@ -1,15 +1,15 @@
-import React from 'react';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import React from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
-import RootLayout from '@/components/layouts/Root';
-import WithNavigationFooter from '@/components/layouts/WithNavigationFooter';
-import Provider from '@/providers';
+import RootLayout from "@/components/layouts/Root";
+import WithNavigationFooter from "@/components/layouts/WithNavigationFooter";
+import Provider from "@/providers";
 
-import type { NextPage } from 'next';
-import type { AppProps } from 'next/app';
-import type { ReactElement, ReactNode } from 'react';
+import type { NextPage } from "next";
+import type { AppProps } from "next/app";
+import type { ReactElement, ReactNode } from "react";
 
-import '@/styles/main.css';
+import "@/styles/main.css";
 
 type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -33,7 +33,7 @@ function App({ Component, pageProps, router }: AppPropsWithLayout) {
   } else {
     getLayout = getDefaultLayout;
   }
-  
+
   return (
     <Provider>
       <RootLayout>

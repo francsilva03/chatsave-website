@@ -1,10 +1,6 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
 function Document() {
-  const projectID = process.env.VOICEFLOW_PROJECT_ID;
-  const url = process.env.VOICEFLOW_URL;
-  const versionID = process.env.VOICEFLOW_VERSION_ID;
-
   return (
     <Html lang="es">
       <Head>
@@ -17,9 +13,9 @@ function Document() {
                 var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
                 v.onload = function() {
                   window.voiceflow.chat.load({
-                    verify: { projectID: '${projectID}' },
-                    url: '${url}',
-                    versionID: '${versionID}'
+                    verify: { projectID: '${process.env.VOICEFLOW_PROJECT_ID}' },
+                    url: '${process.env.VOICEFLOW_URL}',
+                    versionID: '${process.env.VOICEFLOW_VERSION_ID}'
                   });
 
                   setTimeout(() => {
